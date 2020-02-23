@@ -1,0 +1,11 @@
+# editor, misc.
+*~
+.cpcache
+
+# clojure applicaiton
+resources/config.edn
+
+# youtube search golang binary
+credentials.json
+token.json
+yt-search/yt-search

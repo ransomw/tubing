@@ -1,0 +1,23 @@
+{:deps
+ {clj-http {:mvn/version "3.9.1"}
+  cheshire {:mvn/version "5.8.1"}
+  clj-oauth {:mvn/version "1.4.1"}
+  hickory {:mvn/version "0.7.1"}
+  com.stuartsierra/component {:mvn/version "0.3.2"}
+  cljs-http {:mvn/version "0.1.45"}
+  tick {:mvn/version "0.4.20-alpha"}
+  me.raynes/conch {:mvn/version "0.8.0"}
+  me.raynes/fs {:mvn/version "1.4.6"}
+  github-lambdaisland/trikl
+  {:git/url "https://github.com/lambdaisland/trikl"
+   :sha "8c27a347a96ce66762510f0a87cca66e5713bdec"}
+  }
+ :aliases
+ {:cider-clj
+  ;; clj -A:cider-clj
+  {:extra-deps {org.clojure/clojure {:mvn/version "1.9.0"}
+                cider/cider-nrepl {:mvn/version "0.18.0"}}
+   :main-opts ["-m" "nrepl.cmdline"
+               "--middleware" "[cider.nrepl/cider-middleware]"]}
+  }
+ :paths ["src" "resources"]}
